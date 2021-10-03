@@ -2,17 +2,30 @@ public class Linkedlist {
     private int data = 0;
     private Linkedlist next = null;
 
-    public Linkedlist() {
-    }
-
-    public Linkedlist(int data, Linkedlist next) {
-        this.data = data;
-        this.next = next;
-    }
-
     public Linkedlist(int data) {
         this.data = data;
         this.next = null;
+    }
+    static class SinglyLinkedList {
+        public Linkedlist head;
+        public Linkedlist tail;
+
+        public SinglyLinkedList() {
+            this.head = null;
+            this.tail = null;
+        }
+
+        public void insertNode(int nodeData) {
+            Linkedlist node = new Linkedlist(nodeData);
+
+            if (this.head == null) {
+                this.head = node;
+            } else {
+                this.tail.next = node;
+            }
+
+            this.tail = node;
+        }
     }
 
     /**
