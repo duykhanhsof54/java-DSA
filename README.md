@@ -1,4 +1,4 @@
-# java-oop
+# java-DSA
 # duykhanhsof54.github.io
 Nguyễn Duy khánh - 20020426
 Mã LHP :INT 2210 1.
